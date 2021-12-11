@@ -51,7 +51,7 @@ const SongList = (props) => {
       </div>
       <div className="footer">
         <div className="footer-content">
-          Happy Holidays!
+          Thank you Tim Nelson!!
         </div>
       </div>
     </div>
