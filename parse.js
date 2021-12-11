@@ -3,15 +3,24 @@ let dirname = "songs/";
 let outputFile = "./src/songs.json";
 let songs = [];
 
+let i = 0;
 fs.readdir(dirname, (err, filenames) => {
   if (!err) {
+    // exclude .DS_Store
+
+    filenames = filenames.filter((filename) => {
+      return filename.indexOf(".DS_Store") === -1;
+    });
+
     filenames.forEach((filename, id) => {
       fs.readFile(dirname + filename, "utf-8", (err, content) => {
         if (!err) {
           songs.push(parseSong(content, id));
         }
+        console.log(filename);
         if (filename === filenames[filenames.length - 1])
           writeSongs(outputFile, songs);
+          i++;
       });
     });
   }
@@ -62,6 +71,7 @@ function writeSongs(filename, songs) {
     if (err) {
       console.log(err);
     } else {
+      console.log(i+ " Songs found");
       console.log("JSON saved to " + filename);
     }
   });

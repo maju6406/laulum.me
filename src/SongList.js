@@ -51,10 +51,7 @@ const SongList = (props) => {
       </div>
       <div className="footer">
         <div className="footer-content">
-          Want to add a song? Make a pull request!{" "}
-          <a href="https://github.com/muhve/laulum.me/">
-            github.com/muhve/laulum.me
-          </a>
+          Happy Holidays!
         </div>
       </div>
     </div>

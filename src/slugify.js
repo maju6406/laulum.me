@@ -1,4 +1,7 @@
 const slugify = (str) => {
+  // if str is undefined, return empty string
+  if (!str) return '';
+
   str = str.replace(/^\s+|\s+$/g, ""); // trim
   str = str.toLowerCase();
 
