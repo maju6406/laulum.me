@@ -22,7 +22,7 @@ const SongDetail = (props) => {
   return (
     <div className="song-details">
       <Helmet>
-        <title>laulum.me | {title}</title>
+        <title>The Majumdar Songbook | {title}</title>
       </Helmet>
       <div className="centered">
         <div className="lyrics">

@@ -28,7 +28,7 @@ const SongList = (props) => {
   return (
     <div>
       <Helmet>
-        <title>laulum.me</title>
+        <title>The Majumdar Songbook</title>
       </Helmet>
       <div className="searchbar">
         <div className="input-group">
